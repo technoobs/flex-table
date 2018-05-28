@@ -5,9 +5,7 @@ class TableHeader extends React.Component {
     super(props);
     this.id = this.props.columnId;
     this.requiredField = this.props.requiredField || "false";
-
     this.detectRequiredField = this.detectRequiredField.bind(this);
-
   }
 
   // Detect if table header is a required field or not
@@ -19,7 +17,7 @@ class TableHeader extends React.Component {
 
   componentDidMount() {
     // Update header name
-    this.props.updateheader(this.props.colname);
+    this.props.updateheader(this.props.headerName);
     // Update column id to <ExpandableTable> component
     this.props.updatecolumnid(this.id);
     // Update required column to <ExpandableTable> component

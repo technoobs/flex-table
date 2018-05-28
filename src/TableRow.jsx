@@ -21,15 +21,7 @@ class TableRow extends React.Component {
     this.getRowStatus = this.getRowStatus.bind(this);
     this.getSelectedRowStatus = this.getSelectedRowStatus.bind(this);
     this.getCellsValue = this.getCellsValue.bind(this);
-
-    this.simpleTest = this.simpleTest.bind(this);
   }
-
-  simpleTest() {
-    console.log("<TableRow> Simple self test");
-  }
-
-
 
   handleInput(e) {
     console.log("Handle input function: " + e.target.value);
